@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: kuard
-  namespace: vote4drc-dev
+  namespace: _your_namespace_
   annotations:
     kubernetes.io/ingress.class: "nginx"    
     cert-manager.io/issuer: "letsencrypt-prod"
@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - dwitech-vps.de
+    - _your_domain_
     secretName: quickstart-example-tls
   rules:
-  - host: dwitech-vps.de
+  - host: _your_domain_
     http:
       paths:
       - path: /
