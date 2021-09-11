@@ -2,13 +2,12 @@ apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
   name: letsencrypt-prod
-  namespace: vote4drc-dev
+  namespace: _your_namespace_
 spec:
   acme:
     # You must replace this email address with your own.
-    # Let's Encrypt will use this to contact you about expiring
-    # certificates, and issues related to your account.
-    email: daolwin@gmail.com
+    # Let's Encrypt will use this to contact you about expiring certificates, and issues related to your account.
+    email: _your_email_address_
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       # Secret resource that will be used to store the account's private key.
