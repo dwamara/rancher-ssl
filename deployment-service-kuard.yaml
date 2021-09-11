@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kuard
-  namespace: vote4drc-dev
+  namespace: _your_namespace_
 spec:
   selector:
     matchLabels:
@@ -24,7 +24,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kuard
-  namespace: vote4drc-dev
+  namespace: _your_namespace_
 spec:
   ports:
   - port: 80
