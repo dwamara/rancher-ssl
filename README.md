@@ -29,9 +29,9 @@ In addition to Let’s Encrypt certificates (a.k.a ACME certs), cert-manager can
 We will be using installation through manifests. 
 
 In case of our Rancher’s cluster, just apply the following manifest:
-> kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5.3/cert-manager.yaml
+> kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.11.4/cert-manager.yaml
 
-Note: the last stable version when I created this project is **_1.5.3_**, the latest version available should be used.
+Note: the last stable version when I created this project is **_1.11.4_**, the latest version available should be used.
 
 The installation process creates several new custom resource definitions (CRD) required.
 
